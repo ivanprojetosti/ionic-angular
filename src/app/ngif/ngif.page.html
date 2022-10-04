@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ngif</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <main>
+    <h1>Relatórios de Apostas Esportivas</h1>
+
+    <ion-row>
+      <ion-col>
+        <p>Clique no Botão abaixo para exibir o relatório de apostas green</p>
+        <ion-button color="success" (click)="mostrarApostasGreen()"
+          >Green</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <p>Clique no Botão abaixo para exibir o relatório de apostas red</p>
+        <ion-button color="danger" (click)="mostrarApostasRed()"
+          >Red</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <p>Clique no Botão abaixo para exibir o relatório de apostas cashout</p>
+        <ion-button color="warning" (click)="mostrarApostasCashout()"
+          >Cashout</ion-button
+        >
+      </ion-col>
+      <ion-col>
+        <p>Clique no Botão abaixo para limpar as informações de relatório</p>
+        <ion-button color="primary" (click)="limparRelatorio()"
+          >Limpar</ion-button
+        >
+      </ion-col>
+    </ion-row>
+
+    <div id="apostas_green" *ngIf="mostrar_relatorio_green === true">
+      <p>Seu Total de Apostas com o Status Green é: {{total_apostas_green}}</p>
+    </div>
+
+    <div id="apostas_red" *ngIf="mostrar_relatorio_red === true">
+      <p>Seu Total de Apostas com o Status Red é: {{total_apostas_red}}</p>
+    </div>
+    <div id="apostas_cashout" *ngIf="mostrar_relatorio_cashout === true">
+      <p>
+        Seu Total de Apostas com o Status Cashout é: {{total_apostas_green}}
+      </p>
+    </div>
+  </main>
+</ion-content>
