@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ngfor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <main>
+    <div>
+      <p>Listagem das linguagens de programação mais usadas em 2022</p>
+      <ion-list *ngFor="let linguagem of arrLinguagens, let i = index">
+        {{i+1}} - {{linguagem}}
+      </ion-list>
+    </div>
+  </main>
+</ion-content>

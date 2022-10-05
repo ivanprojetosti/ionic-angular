@@ -8,12 +8,16 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'ngif',
+    redirectTo: 'ngfor',
     pathMatch: 'full'
   },
   {
     path: 'ngif',
     loadChildren: () => import('./ngif/ngif.module').then(m => m.NgifPageModule)
+  },
+  {
+    path: 'ngfor',
+    loadChildren: () => import('./ngfor/ngfor.module').then(m => m.NgforPageModule)
   },
 ];
 
