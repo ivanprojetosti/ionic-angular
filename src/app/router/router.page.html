@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>router</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <main>
+    <ion-row>
+      <ion-col size="6">
+        <p>
+          Clique Abaixo para direcionar para a página de ngIf(Usando routerLink)
+        </p>
+        <ion-button color="success" routerLink="/ngif">ngIf</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <p>
+          Clique Abaixo para direcionar para a página de ngFor(Usando
+          routerLink)
+        </p>
+        <ion-button color="warning" routerLink="/ngfor">ngFor</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <p>
+          Clique Abaixo para direcionar para a página de ngIf(Usando um método)
+        </p>
+        <ion-button color="primary" (click)="acessarNgIf()">ngIf</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <p>
+          Clique Abaixo para direcionar para a página de ngFor(Usando um método)
+        </p>
+        <ion-button color="danger" (click)="acessarNgFor()">ngfor</ion-button>
+      </ion-col>
+    </ion-row>
+  </main>
+</ion-content>

@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'ngfor',
+    redirectTo: 'router',
     pathMatch: 'full'
   },
   {
@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'ngfor',
     loadChildren: () => import('./ngfor/ngfor.module').then(m => m.NgforPageModule)
+  },
+  {
+    path: 'router',
+    loadChildren: () => import('./router/router.module').then(m => m.RouterPageModule)
   },
 ];
 
