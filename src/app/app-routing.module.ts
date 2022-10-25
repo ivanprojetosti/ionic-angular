@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'router',
+    redirectTo: 'arquitetura-angular',
     pathMatch: 'full'
   },
   {
@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'router',
     loadChildren: () => import('./router/router.module').then(m => m.RouterPageModule)
+  },
+  {
+    path: 'arquitetura-angular',
+    loadChildren: () => import('./arquitetura-angular/arquitetura-angular.module').then(m => m.ArquiteturaAngularPageModule)
   },
 ];
 
