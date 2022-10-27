@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'arquitetura-angular',
     loadChildren: () => import('./arquitetura-angular/arquitetura-angular.module').then(m => m.ArquiteturaAngularPageModule)
   },
+  {
+    path: 'momentjs',
+    loadChildren: () => import('./momentjs/momentjs.module').then( m => m.MomentjsPageModule)
+  },
 ];
 
 @NgModule({
