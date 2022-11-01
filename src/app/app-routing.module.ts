@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'momentjs',
     loadChildren: () => import('./momentjs/momentjs.module').then( m => m.MomentjsPageModule)
   },
+  {
+    path: 'ion-grid',
+    loadChildren: () => import('./ion-grid/ion-grid.module').then( m => m.IonGridPageModule)
+  },
 ];
 
 @NgModule({
