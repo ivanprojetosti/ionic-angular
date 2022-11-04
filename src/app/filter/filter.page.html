@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>filter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <main>
+    <div id="unformatted">
+      <ion-label>O texto abaixo está sem o filter</ion-label>
+      <p>{{lorem}}
+      </p>
+    </div>
+    <div id="formatted_uppercase">
+      <ion-label>O texto abaixo está com o filter de uppercase</ion-label>
+      <p>{{lorem | uppercase}}
+      </p>
+    </div>
+    <div id="formatted_lowecase">
+      <ion-label>O texto abaixo está com o filter de lowercase</ion-label>
+      <p>{{lorem | lowercase}}
+      </p>
+    </div>
+
+    <div id="unformatted">
+      <ion-label>O preço abaixo está sem o filter</ion-label>
+      <p>{{price}}
+      </p>
+    </div>
+    <div id="formatted_price">
+      <ion-label>O preço abaixo com o filter de currency BRL</ion-label>
+      <p>{{price | currency: "BRL"}}
+      </p>
+    </div>
+
+
+
+  </main>
+
+</ion-content>

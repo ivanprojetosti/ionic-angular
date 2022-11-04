@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'ion-grid',
     loadChildren: () => import('./ion-grid/ion-grid.module').then( m => m.IonGridPageModule)
   },
+  {
+    path: 'filter',
+    loadChildren: () => import('./filter/filter.module').then( m => m.FilterPageModule)
+  },
 ];
 
 @NgModule({
