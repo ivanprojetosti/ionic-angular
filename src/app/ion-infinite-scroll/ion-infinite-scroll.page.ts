@@ -20,7 +20,7 @@ export class IonInfiniteScrollPage implements OnInit {
     this.itemsPage = this.items.slice(this.index, this.offset + this.index);
     this.index += this.offset;
   }
-  carregarDados(event) {
+  loading(event) {
     setTimeout(() => {
       let news = this.items.slice(this.index, this.offset + this.index);
       this.index += this.offset;
