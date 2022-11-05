@@ -39,6 +39,10 @@ const routes: Routes = [
     path: 'filter',
     loadChildren: () => import('./filter/filter.module').then( m => m.FilterPageModule)
   },
+  {
+    path: 'ion-infinite-scroll',
+    loadChildren: () => import('./ion-infinite-scroll/ion-infinite-scroll.module').then( m => m.IonInfiniteScrollPageModule)
+  },
 ];
 
 @NgModule({
