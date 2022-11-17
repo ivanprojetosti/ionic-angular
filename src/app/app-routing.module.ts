@@ -43,6 +43,10 @@ const routes: Routes = [
     path: 'ion-infinite-scroll',
     loadChildren: () => import('./ion-infinite-scroll/ion-infinite-scroll.module').then( m => m.IonInfiniteScrollPageModule)
   },
+  {
+    path: 'class-ionic',
+    loadChildren: () => import('./class-ionic/class-ionic.module').then( m => m.ClassIonicPageModule)
+  },
 ];
 
 @NgModule({
